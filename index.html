@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Pinzón Giraldo" />
+    <meta name="copyright" content="disopro.com" />
+    <title>Mi Primera Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="encabezado">
+        <h1 class="logo">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Mi Web</a>
+        </h1>
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#acerca">Acerca de mi</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="seccion-principal">
+        <section class="seccion-1">
+            <div class="acerca-de">
+                <h2>Acerca de mi</h2>
+                <p>Bienvenido a mi pagina web</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt tempore cupiditate hic
+                    labore dignissimos. Delectus, consequuntur sed fuga voluptatem eaque error sit sunt voluptate
+                    ut, et velit commodi tempore?</p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="hero.jpg" alt="hero">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <img src="carrusel-img.jpeg" alt="carrusel-img">
+        </section>
+        <section class="form-header">
+            <h1>Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" />
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="ejemplo@gmail.com" required />
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

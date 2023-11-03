@@ -1,0 +1,270 @@
+body {
+    background: linear-gradient(90deg, #ffffff, #e3e3e3, #bdbdbd);
+    margin: 0;
+}
+
+.logo {
+    width: 70%;
+}
+.fa-solid {
+    color: black;
+    padding-right: 5%;
+}
+
+h2,
+p {
+    padding: 0 10%;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ol,
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(90deg, #939393, #666666, #4f4f4f);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+#check {
+    position: absolute;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+.seccion-1 {
+    display: flex;
+}
+
+.acerca-de {
+    width: 70%;
+}
+
+.acerca-imagen {
+    padding: 2%;
+}
+
+.acerca-imagen,
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding: 2%;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 250px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+.alertas {
+    color: red;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .acerca-de {
+        width: auto;
+    }
+
+    .acerca-imagen {
+        width: 250%;
+    }
+
+    #seccion-principal {
+        justify-content: center;
+    }
+
+    #check {
+        position: relative;
+        margin-top: 33px;
+        margin-right: 10px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg, #939393, #666666, #4f4f4f);
+        top: 80px;
+        left: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~.checkbtn {
+        color: white;
+    }
+
+    .form-header {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+    }
+}
